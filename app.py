@@ -35,9 +35,8 @@ input_style = """
     </style>
 """
 st.markdown(input_style, unsafe_allow_html=True)
-api_key = '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'
 client = Groq(
-            api_key=api_key, 
+            api_key='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', 
             model_name='mixtral-8x7b-32768'
     )
 
