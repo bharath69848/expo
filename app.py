@@ -35,10 +35,11 @@ input_style = """
     </style>
 """
 st.markdown(input_style, unsafe_allow_html=True)
-
-client = Groq(
-    api_key=st.secrets["GROQ_API_KEY"],
-)
+groq_api_key = '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'
+client = ChatGroq(
+            groq_api_key=groq_api_key, 
+            model_name='mixtral-8x7b-32768'
+    )
 
 # Initialize chat history and selected model
 if "messages" not in st.session_state:
