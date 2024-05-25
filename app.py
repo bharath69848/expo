@@ -36,7 +36,9 @@ input_style = """
 """
 st.markdown(input_style, unsafe_allow_html=True)
 
-api_key='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'
+client = Groq(
+    api_key=st.secrets["GROQ_API_KEY"],
+)
 
 # Initialize chat history and selected model
 if "messages" not in st.session_state:
@@ -64,11 +66,6 @@ if prompt := st.chat_input("Enter your prompt here..."):
 
     with st.chat_message("user", avatar='👨‍💻'):
         st.markdown(prompt)
-        
-client = ChatGroq(
-            api_key=api_key, 
-            model_name='mixtral-8x7b-32768'
-    )
 
     # Fetch response from Groq API
     try:
