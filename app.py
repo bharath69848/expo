@@ -8,7 +8,7 @@ st.write("Hello! I'm your friendly Coding chatbot. I can help answer your questi
 background_image = """
     <style>
     [data-testid="stAppViewContainer"] > .main {
-        background-image: url("https://i.ibb.co/k1hgfgY/bgdfa.png");
+        background-image: url("https://i.ibb.co/X5XjgmD/Untitled-design.jpg");
         background-size: 100vw 100vh;  # This sets the size to cover 100% of the viewport width and height
         background-position: center;  
         background-repeat: no-repeat;
