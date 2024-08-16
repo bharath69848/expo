@@ -5,36 +5,6 @@ from groq import Groq
 st.image('logo.png')
 st.write("Hello! I'm your friendly Coding chatbot. I can help answer your questions, provide information. I'm also super fast! Let's start our conversation!")
 
-background_image = """
-    <style>
-    [data-testid="stAppViewContainer"] > .main {
-        background-image: url("https://i.ibb.co/Ykn8HHK/Untitled-design.jpg");
-        background-size: 100vw 100vh;  # This sets the size to cover 100% of the viewport width and height
-        background-position: center;  
-        background-repeat: no-repeat;
-    }
-    [data-testid="stHeader"] {
-    background-color: rgba(0, 0, 0, 0);
-    }
-    </style>
-"""
-st.markdown(background_image, unsafe_allow_html=True)
-
-input_style = """
-    <style>
-    input[type="text"] {
-        background-color: transparent;
-        color: #a19eae;  // This changes the text color inside the input box
-    }
-    div[data-baseweb="base-input"] {
-        background-color: transparent !important;
-    }
-    [data-testid="stAppViewContainer"] {
-        background-color: transparent !important;
-    }
-    </style>
-"""
-st.markdown(input_style, unsafe_allow_html=True)
 client = Groq(
             api_key='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', 
     )
