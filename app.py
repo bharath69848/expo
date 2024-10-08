@@ -6,7 +6,7 @@ st.image('logo.png')
 st.write("Hello! I'm your friendly Coding chatbot. I can help answer your questions, provide information. I'm also super fast! Let's start our conversation!")
 
 client = Groq(
-            api_key='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', 
+            api_key='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', 
     )
 
 # Initialize chat history and selected model
@@ -39,7 +39,7 @@ if prompt := st.chat_input("Enter your prompt here..."):
     # Fetch response from Groq API
     try:
         chat_completion = client.chat.completions.create(
-            model='mixtral-8x7b-32768',
+            model='Ilama-3.2-90b-text-preview',
             messages=[
                 {
                     "role": m["role"],
